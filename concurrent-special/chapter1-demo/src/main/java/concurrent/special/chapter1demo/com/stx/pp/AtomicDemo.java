@@ -10,13 +10,15 @@ public class AtomicDemo {
 
     private static int count = 0;
 
-    public static void incr(){
-        try {
-            Thread.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    public /*synchronized*/ static void incr(){
+        synchronized (AtomicDemo.class){
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            count++;
         }
-        count++;
     }
 
     public static void main(String[] args) throws InterruptedException {
