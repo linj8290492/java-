@@ -8,7 +8,10 @@ package concurrent.special.chapter1demo.com.stx.pp;
 public class WaitNotifyDemo {
     public static void main(String[] args) {
         Object lock = new Object();
+//        Object lock2 = new Object();
 
+//        ThreadC threadC = new ThreadC(lock);
+//        threadC.start();
         ThreadA threadA = new ThreadA(lock);
         threadA.start();
         ThreadB threadB = new ThreadB(lock);

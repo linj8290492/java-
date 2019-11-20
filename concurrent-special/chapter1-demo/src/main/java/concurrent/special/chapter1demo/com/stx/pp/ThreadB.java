@@ -18,6 +18,7 @@ public class ThreadB extends Thread {
         synchronized(lock){
             System.out.println("start ThreadB");
             lock.notify();
+//            lock.notifyAll();
             System.out.println("end ThreadB");
         }
     }
