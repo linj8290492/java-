@@ -28,7 +28,7 @@ public class JoinRule {
         });
 
         t1.start();
-        t1.join();
+        t1.join();//建立了一个happends-before规则
         t2.start();
         t2.join();
         t3.start();
