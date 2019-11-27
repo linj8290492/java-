@@ -11,6 +11,7 @@
     <modules>
         <module>chapter1-demo</module>
         <module>chapter2-demo</module>
+        <module>chapter5-demo</module>
     </modules>
 
 
