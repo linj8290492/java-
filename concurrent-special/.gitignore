@@ -11,6 +11,7 @@ out/
 *.iml
 mvnw
 mvnw.cmd
+.mvn
 
 # Eclipse
 .classpath
