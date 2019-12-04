@@ -12,6 +12,7 @@ public class SemaphoreDemo {
     //permits;令牌(5)
     //公平和非公平
 
+
     static class Car extends Thread{
         private int num;
         private Semaphore semaphore;
