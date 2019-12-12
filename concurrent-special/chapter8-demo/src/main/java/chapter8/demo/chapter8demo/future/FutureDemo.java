@@ -21,6 +21,7 @@ public class FutureDemo implements Callable<String> {
         FutureDemo futureDemo = new FutureDemo();
         FutureTask<String> stringFutureTask = new FutureTask<String>(futureDemo);
         new Thread(stringFutureTask).start();
-        System.out.println(stringFutureTask.get());//阻塞式获取结果，上面在sleep 5 sec
+        //阻塞式获取结果，上面在sleep 5 sec
+        System.out.println(stringFutureTask.get());
     }
 }
